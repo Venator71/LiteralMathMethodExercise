@@ -5,7 +5,9 @@ let warmHugs = "Hi, I'm Olaf and I like warm hugs.";
 console.log(warmHugs.toUpperCase());
 
 // Q 1c
-console.log(warmHugs.replace("like","love"));
+warmHugs = warmHugs.replace("like","love");
+// console.log(warmHugs.replace("like","love"));
+
 
 // Q 2a
 
@@ -16,6 +18,7 @@ console.log(beenImpaled.slice(18));
 // console.log(beenImpaled.slice(-18));
 // console.log(beenImpaled.length);
 // console.log(beenImpaled.slice(18, 36));
+beenImpaled = beenImpaled.slice(18);
 
 // Q 3a
 let dotDotDot = "..."
@@ -31,25 +34,33 @@ console.log(Math.PI);
 
 randomNumber = Math.random()
 randomNumber *= 3;
-randomNumber = Math.ceil(randomNumber)
+randomNumber = Math.floor(randomNumber)
+randomNumber++;
 console.log(randomNumber);
+
 
 // Bonus Questions
 
 // 6
-let letItGo = " Let it Go!"
-console.log(letItGo.toUpperCase().repeat(2));
+console.log(" Let it Go!".toUpperCase().repeat(3).slice(-21));
+
 
 // 7a
 let reindeer = "Reindeers are better than people.";
-
-console.log(reindeer.replaceAll(" ","_"));
+reindeer = reindeer.replaceAll(" ","_")
+console.log(reindeer);
 
 // 8
 
 console.log(Math.sqrt(2));
 
 // 9
+/*
+let newRandomNumber = Math.random();
+newRandomNumber *=17;
+newRandomNumber = Math.floor(newRandomNumber);
+console.log(newRandomNumber); 
+*/
 
 let newRandomNumber = (Math.floor((Math.random() * 16) + 7));
 console.log(newRandomNumber);
