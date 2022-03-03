@@ -31,12 +31,14 @@ console.log(Math.PI);
 
 randomNumber = Math.random()
 randomNumber *= 3;
+randomNumber = Math.ceil(randomNumber)
 console.log(randomNumber);
 
 // Bonus Questions
 
 // 6
-// "Let it go!"= "Let it go!, Let it go!";
+let letItGo = " Let it Go!"
+console.log(letItGo.toUpperCase().repeat(2));
 
 // 7a
 let reindeer = "Reindeers are better than people.";
